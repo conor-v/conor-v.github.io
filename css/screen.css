@@ -1,0 +1,374 @@
+/***********************
+         BASIS
+***********************/
+body {
+    font-family: Roboto, sans-serif;
+    background-color: black;
+    color: #ffffff;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 70px;
+}
+
+a:hover {
+    color: #135dae;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    display: inline-flex;
+    margin-left: 0;
+}
+
+li {
+    margin-right: 60px;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: bitter, Roboto, sans-serif;
+}
+
+#nasalogo {
+    padding-left: 40px;
+}
+
+.test {
+    background: darkblue;
+    margin-bottom: 10px;
+}
+/***********************
+      DOELGROEP
+***********************/
+
+#doelgroep {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#DG-info {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#img-DG {
+    position: relative;
+    bottom: 228px;
+    left: 850px;
+    width: 35%;
+}
+
+#img-data {
+    width: 42%;
+    height: 42%;
+}
+
+#DG-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 90px;
+    line-height: 1.8;
+}
+
+.h1-delen{
+    margin: auto;
+    padding-bottom: 60px;
+    font-size: 45px;
+}
+
+
+
+/***********************
+        DATA
+***********************/
+
+#data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: -100px;
+    margin-bottom: 120px;
+}
+
+#grafieken {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.space {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+
+/***********************
+        FOTO
+***********************/
+
+#foto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.img-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    width: 600px;
+    height: 500px;
+    transition: transform 1s cubic-bezier(.55, -.66, .27, 1.2);
+    transform-style: preserve-3d;
+}
+
+.img-box:hover {
+   transform: rotateY(-180deg);
+}
+
+.nasaFoto {
+    width: 450px;
+    height: 350px;
+    margin: auto;
+}
+
+.nasaVideo {
+    width: 450px;
+    height: 350px;
+    margin: auto;
+}
+
+#hover {
+    color: darkblue;
+    border-radius: 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.side-a {
+    background: #0D427B;
+    width: 600px;
+    height: 500px;
+    margin: auto;
+    z-index: 1;
+}
+
+.side-b {
+    background: #0D427B;
+    width: 600px;
+    margin: auto;
+    z-index: 0;
+    position: absolute;
+    height: 500px;
+    line-height: 1.8;
+    transform: rotateY(180deg);
+}
+
+.side-a,
+.side-b {
+    backface-visibility: hidden;
+}
+
+
+
+/***********************
+       OVER MIJ
+***********************/
+
+#overmij {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#OM-tekst {
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.OM-p {
+    margin-right: 65px;
+    margin-left: 65px;
+}
+
+.OM-titel {
+    text-align: center;
+    font-size: 40px;
+}
+
+.OM-tekst {
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+/***********************
+        FOOTER
+***********************/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#madeby {
+    margin: auto;
+}
+
+#website-link {
+    color: dodgerblue;
+}
+
+
+/***********************
+        @media
+***********************/
+
+@media (max-width: 784px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul {
+        display: flex
+    }
+
+    li {
+        margin-right: 20px;
+        font-size: 15px;
+    }
+
+    .h1-delen {
+        margin: auto;
+        padding-bottom: 60px;
+        font-size: 35px;
+    }
+    #DG-info {
+        display: inline-flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #DG-text {
+        text-align: center;
+        margin: auto;
+    }
+
+    #img-data {
+        margin: auto;
+        padding-top: 25px;
+    }
+
+    #img-DG {
+        bottom: 112px;
+        left: 260px;
+    }
+
+    #grafieken {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .space {
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    #OM-tekst {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-box {
+        width: 500px;
+        height: 400px;
+    }
+
+    .nasaFoto {
+        width: 350px;
+        height: 250px;
+    }
+
+    .nasaVideo {
+        width: 350px;
+        height: 250px;
+    }
+
+    .side-a,
+    .side-b{
+        width: 500px;
+        height: 400px;
+    }
+    .side-b {
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 1120px ) and (min-width: 785px){
+
+    li {
+        margin-right: 40px;
+        font-size: 17px;
+    }
+
+    #DG-text {
+        margin-right: 5px;
+        line-height: 1.5;
+    }
+
+    #img-DG {
+        bottom: 130px;
+        left: 553px;
+    }
+
+    .OM-titel {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .OM-tekst {
+        text-align: center;
+        font-size: 30px;
+    }
+    .space {
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+}
