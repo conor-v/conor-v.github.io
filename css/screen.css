@@ -49,10 +49,6 @@ h1 {
     font-family: bitter, Roboto, sans-serif;
 }
 
-#nasalogo {
-    padding-left: 40px;
-}
-
 .test {
     background: darkblue;
     margin-bottom: 10px;
@@ -155,7 +151,7 @@ h1 {
 
 
 #hover {
-    color: darkblue;
+    color: d;
     border-radius: 10px;
     font-size: 20px;
     font-style: italic;
@@ -244,6 +240,17 @@ footer {
 /***********************
         @media
 ***********************/
+
+@media (max-width: 1557px ) {
+    
+    li {
+        font-size: 20px;
+    }
+
+    #DG-text {
+        line-height: 2.4;
+    }
+}
 
 @media (max-width: 1024px ){
 
@@ -337,4 +344,3 @@ footer {
         line-height: 1.4;
     }
 }
-
