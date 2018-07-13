@@ -30,9 +30,7 @@ nav {
     align-items: center;
     position: fixed;
     top: 0;
-    right: 0;
     width: 100%;
-    z-index: 1000;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -58,6 +56,9 @@ h1 {
     background: darkblue;
     margin-bottom: 10px;
 }
+
+
+
 /***********************
       DOELGROEP
 ***********************/
@@ -73,13 +74,6 @@ h1 {
     display: inline-flex;
     justify-content: center;
     width: 100%;
-}
-
-#img-DG {
-    position: relative;
-    bottom: 228px;
-    left: 850px;
-    width: 35%;
 }
 
 #img-data {
@@ -111,8 +105,9 @@ h1 {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    margin-top: -100px;
+    margin-top: 50px;
     margin-bottom: 120px;
+
 }
 
 #grafieken {
@@ -153,7 +148,7 @@ h1 {
 }
 
 .img-box:hover {
-   transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
 }
 
 .nasaFoto {
@@ -259,11 +254,38 @@ footer {
         @media
 ***********************/
 
+@media (max-width: 1024px ){
+
+    li {
+        margin-right: 40px;
+        font-size: 17px;
+    }
+
+    #DG-text {
+        margin-right: 5px;
+        line-height: 1.5;
+    }
+
+    .OM-titel {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .OM-tekst {
+        text-align: center;
+        font-size: 30px;
+    }
+    .space {
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+}
+
 @media (max-width: 784px) {
 
     nav {
-        display: flex;
         flex-direction: column;
+        left: -55px;
     }
 
     ul {
@@ -280,6 +302,7 @@ footer {
         padding-bottom: 60px;
         font-size: 35px;
     }
+
     #DG-info {
         display: inline-flex;
         justify-content: center;
@@ -297,19 +320,9 @@ footer {
         padding-top: 25px;
     }
 
-    #img-DG {
-        bottom: 112px;
-        left: 260px;
-    }
-
     #grafieken {
         display: flex;
         flex-direction: column;
-    }
-
-    .space {
-        margin: auto;
-        margin-bottom: 50px;
     }
 
     #OM-tekst {
@@ -318,23 +331,25 @@ footer {
     }
 
     .img-box {
-        width: 500px;
+        width: 450px;
         height: 400px;
+
+
     }
 
     .nasaFoto {
-        width: 350px;
-        height: 250px;
+        width: 300px;
+        height: 200px;
     }
 
     .nasaVideo {
-        width: 350px;
-        height: 250px;
+        width: 300px;
+        height: 200px;
     }
 
     .side-a,
     .side-b{
-        width: 500px;
+        width: 450px;
         height: 400px;
     }
     .side-b {
@@ -342,34 +357,3 @@ footer {
     }
 }
 
-@media (max-width: 1120px ) and (min-width: 785px){
-
-    li {
-        margin-right: 40px;
-        font-size: 17px;
-    }
-
-    #DG-text {
-        margin-right: 5px;
-        line-height: 1.5;
-    }
-
-    #img-DG {
-        bottom: 130px;
-        left: 553px;
-    }
-
-    .OM-titel {
-        text-align: center;
-        font-size: 30px;
-    }
-
-    .OM-tekst {
-        text-align: center;
-        font-size: 30px;
-    }
-    .space {
-        margin-left: 75px;
-        margin-right: 75px;
-    }
-}
