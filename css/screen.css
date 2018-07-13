@@ -31,6 +31,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000000;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -285,7 +286,6 @@ footer {
 
     nav {
         flex-direction: column;
-        left: -55px;
     }
 
     ul {
@@ -294,7 +294,7 @@ footer {
 
     li {
         margin-right: 20px;
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .h1-delen {
@@ -331,29 +331,23 @@ footer {
     }
 
     .img-box {
-        width: 450px;
-        height: 400px;
-
-
+        width: 250px;
+        height: 350px;
     }
 
-    .nasaFoto {
-        width: 300px;
-        height: 200px;
-    }
-
-    .nasaVideo {
-        width: 300px;
-        height: 200px;
+    .nasadata {
+        width: 150px;
+        height: 100px;
     }
 
     .side-a,
     .side-b{
-        width: 450px;
-        height: 400px;
+        width: 250px;
+        height: 350px;
     }
     .side-b {
         line-height: 1.4;
     }
 }
+
 

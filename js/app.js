@@ -15,9 +15,9 @@ const containerb = $('.side-b');
             containera.append('<h2>' + data.title + '</h2>');
             containera.append('<p>' + data.date + '</p>');
             if (data.hdurl) {
-                containera.append('<img class="nasaFoto" src=' + data.hdurl + ' />');
+                containera.append('<img class="nasadata" src=' + data.hdurl + ' />');
             } else {
-                containera.append('<iframe class="nasaVideo" src=' + data.url + ' />');
+                containera.append('<iframe class="nasadata" src=' + data.url + ' />');
             }
             containera.append('<p id="hover">HOVER MIJ</p>');
 
@@ -25,7 +25,7 @@ const containerb = $('.side-b');
             //side-b
             containerb.append('<h2>' + data.title + '</h2>');
             containerb.append('<p>' + data.date + '</p>');
-            containerb.append('<p>' + data.explanation  + '</p>');
+            containerb.append('<p id="explanation">' + data.explanation  + '</p>');
 
         }
     });
