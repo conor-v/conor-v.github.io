@@ -117,11 +117,6 @@ h1 {
     justify-content: center;
 }
 
-.space {
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
 
 
 /***********************
@@ -152,17 +147,12 @@ h1 {
     transform: rotateY(-180deg);
 }
 
-.nasaFoto {
+.nasadata {
     width: 450px;
     height: 350px;
     margin: auto;
 }
 
-.nasaVideo {
-    width: 450px;
-    height: 350px;
-    margin: auto;
-}
 
 #hover {
     color: darkblue;
@@ -276,10 +266,6 @@ footer {
         text-align: center;
         font-size: 30px;
     }
-    .space {
-        margin-left: 75px;
-        margin-right: 75px;
-    }
 }
 
 @media (max-width: 784px) {
@@ -289,7 +275,9 @@ footer {
     }
 
     ul {
-        display: flex
+        display: flex;
+        margin-top: -50px;
+        margin-bottom: -20px;
     }
 
     li {
@@ -349,5 +337,4 @@ footer {
         line-height: 1.4;
     }
 }
-
 
