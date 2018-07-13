@@ -192,6 +192,7 @@ h1 {
     height: 500px;
     line-height: 1.8;
     transform: rotateY(180deg);
+    overflow: auto;
 }
 
 .side-a,
