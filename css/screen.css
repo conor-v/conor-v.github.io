@@ -9,21 +9,17 @@ body {
     width: 100%;
     height: 100%;
 }
-
 a {
     text-decoration: none;
     color: #ffffff;
     line-height: 70px;
 }
-
 a:hover {
     color: #135dae;
 }
-
 ul {
     list-style-type: none;
 }
-
 nav {
     display: inline-flex;
     justify-content: center;
@@ -34,69 +30,53 @@ nav {
     z-index: 1000000;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 ul {
     display: inline-flex;
     margin-left: 0;
 }
-
 li {
     margin-right: 60px;
     font-size: 20px;
 }
-
 h1 {
     font-family: bitter, Roboto, sans-serif;
 }
-
 .test {
     background: darkblue;
     margin-bottom: 10px;
 }
-
-
-
 /***********************
       DOELGROEP
 ***********************/
-
 #doelgroep {
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: center;
 }
-
 #DG-info {
     display: inline-flex;
     justify-content: center;
     width: 100%;
 }
-
 #img-data {
     width: 42%;
     height: 42%;
 }
-
 #DG-text {
     display: flex;
     flex-direction: column;
     margin-right: 90px;
     line-height: 1.8;
 }
-
 .h1-delen{
     margin: auto;
     padding-bottom: 60px;
     font-size: 45px;
 }
-
-
-
 /***********************
         DATA
 ***********************/
-
 #data {
     display: flex;
     flex-direction: column;
@@ -104,21 +84,19 @@ h1 {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 120px;
-
 }
-
 #grafieken {
     display: inline-flex;
     width: 100%;
     justify-content: center;
 }
-
-
-
+#myChart{
+    width: 100px;
+    height: 100px;
+}
 /***********************
         FOTO
 ***********************/
-
 #foto {
     display: flex;
     flex-direction: column;
@@ -126,7 +104,6 @@ h1 {
     width: 100%;
     margin-bottom: 120px;
 }
-
 .img-box {
     display: flex;
     justify-content: center;
@@ -138,25 +115,20 @@ h1 {
     transition: transform 1s cubic-bezier(.55, -.66, .27, 1.2);
     transform-style: preserve-3d;
 }
-
 .img-box:hover {
     transform: rotateY(-180deg);
 }
-
 .nasadata {
     width: 450px;
     height: 350px;
     margin: auto;
 }
-
-
 #hover {
     color: blanchedalmond;
     border-radius: 10px;
     font-size: 20px;
     font-style: italic;
 }
-
 .side-a {
     background: #0D427B;
     width: 600px;
@@ -164,7 +136,6 @@ h1 {
     margin: auto;
     z-index: 1;
 }
-
 .side-b {
     background: #0D427B;
     width: 600px;
@@ -176,165 +147,128 @@ h1 {
     transform: rotateY(180deg);
     overflow: auto;
 }
-
 .side-a,
 .side-b {
     backface-visibility: hidden;
 }
-
-
-
 /***********************
        OVER MIJ
 ***********************/
-
 #overmij {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-
 #OM-tekst {
     display: inline-flex;
     justify-content: center;
     margin-right: 20px;
     margin-left: 20px;
 }
-
 .OM-p {
     margin-right: 65px;
     margin-left: 65px;
 }
-
 .OM-titel {
     text-align: center;
     font-size: 40px;
 }
-
 .OM-tekst {
     text-align: center;
     font-size: 40px;
 }
-
-
-
 /***********************
         FOOTER
 ***********************/
-
 footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
 #madeby {
     margin: auto;
 }
-
 #website-link {
     color: dodgerblue;
 }
-
-
 /***********************
         @media
 ***********************/
-
 @media (max-width: 1557px ) {
-    
+
     li {
         font-size: 20px;
     }
-
     #DG-text {
         line-height: 2.4;
     }
 }
-
 @media (max-width: 1024px ){
-
     li {
         margin-right: 40px;
         font-size: 17px;
     }
-
     #DG-text {
         margin-right: 5px;
         line-height: 1.5;
     }
-
     .OM-titel {
         text-align: center;
         font-size: 30px;
     }
-
     .OM-tekst {
         text-align: center;
         font-size: 30px;
     }
 }
-
 @media (max-width: 784px) {
-
     nav {
         flex-direction: column;
     }
-
     ul {
         display: flex;
         margin-top: -50px;
         margin-bottom: -20px;
     }
-
     li {
         margin-right: 20px;
         font-size: 12px;
     }
-
     .h1-delen {
         margin: auto;
         padding-bottom: 60px;
         font-size: 35px;
     }
-
     #DG-info {
         display: inline-flex;
         justify-content: center;
         flex-direction: column;
         width: 100%;
     }
-
     #DG-text {
         text-align: center;
         margin: auto;
     }
-
     #img-data {
         margin: auto;
         padding-top: 25px;
     }
-
     #grafieken {
         display: flex;
         flex-direction: column;
     }
-
     #OM-tekst {
         display: flex;
         flex-direction: column;
     }
-
     .img-box {
         width: 250px;
         height: 350px;
     }
-
     .nasadata {
         width: 150px;
         height: 100px;
     }
-
     .side-a,
     .side-b{
         width: 250px;
@@ -342,5 +276,11 @@ footer {
     }
     .side-b {
         line-height: 1.4;
+    }
+}
+@media (max-width: 326px) {
+    li {
+        margin-right: 10px;
+        font-size: 10px;
     }
 }
