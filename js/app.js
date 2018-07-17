@@ -38,15 +38,17 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        labels: ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dec"],
         datasets: [{
             label: "Nasa api data",
-            backgroundColor: 'rgb(255, 99, 20)',
-            borderColor: 'rgb(255, 99, 20)',
-            data: [0, 10, 5, 2, 20, 30, 45]
+
+            borderColor: '#5B007A',
+            data: [0, 10, 5, 2, 20, 30, 45, 22, 55, 40, 43, 32]
         }]
     },
 
     // Configuration options go here
-    options: {}
+    options: {
+       
+    }
 });

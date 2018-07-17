@@ -39,7 +39,7 @@ li {
     font-size: 20px;
 }
 h1 {
-    font-family: bitter, Roboto, sans-serif;
+    font-family: bitter;
 }
 .test {
     background: darkblue;
@@ -87,8 +87,10 @@ h1 {
 }
 #grafieken {
     display: inline-flex;
-    width: 100%;
+    width: 72%;
+    margin: auto;
     justify-content: center;
+    background: linear-gradient(to top right, #080a38, #1A1FBA );
 }
 #myChart{
     width: 100px;
