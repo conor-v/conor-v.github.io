@@ -45,6 +45,10 @@ h1 {
     background: darkblue;
     margin-bottom: 10px;
 }
+
+.active {
+    background-color: aqua;
+}
 /***********************
       DOELGROEP
 ***********************/
@@ -82,7 +86,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 120px;
 }
 #grafieken {
@@ -268,8 +272,8 @@ footer {
         height: 350px;
     }
     .nasadata {
-        width: 150px;
-        height: 100px;
+        width: 220px;
+        height: 170px;
     }
     .side-a,
     .side-b{
