@@ -31,29 +31,53 @@ const containerb = $('.side-b');
 /*
 CHART
 */
-var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'line',
+$.ajax({
+    type: 'GET',
+    url: 'https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=XhB5GKyMvDUDplRAwBJMLz4ST1fVhVYXkcNLSROr',
+    dataType: 'json',
+    success: function (data) {
+        console.log('success',data);
+        $.each(data, function (i, item) {
+            // console.log(item.estimated_diameter, "test");
 
-    // The data for our dataset
-    data: {
-        labels: ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dec"],
-        datasets: [{
-            label: "Nasa api data",
 
-            borderColor: '#5B007A',
-            data: [0, 10, 5, 2, 20, 30, 45, 22, 55, 40, 43, 32]
-        }]
-    },
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
 
-    // Configuration options go here
-    options: {
-
+            // The data for our dataset
+            data: {
+                labels: ["RG2", "RL35", "RX83", "RY83", "LE27", "FC35", "RH36", "RU33", "RN41"],
+                datasets: [{
+                    label: "Astro min",
+                    borderColor: '#5B007A',
+                    data: [1, 5, 8, 9, 5, 10, 8, 2, 5]
+                    },
+                    {
+                        label: "Astro max",
+                    borderColor: '#7158FA',
+                    data: [5, 8, 12, 15, 8, 12, 10, 9, 8]
+                }]
+            }
+        });
+         // console.log(item);
+        });
     }
 });
-    // Configuration options go here
-    options: {
 
-    }
+/*
+nasa logo knop
+ */
+$(document).ready(function(){
+   $("nav").show();
+   $("#btn").click(function(){
+      if ($("nav").is(":hidden") == false){
+          $("nav").hide();
+          $("#btn").val('SHOW');
+      } else {
+          $("nav").show();
+          $("#btn").val('HIDE');
+      }
+   });
 });
