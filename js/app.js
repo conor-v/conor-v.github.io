@@ -10,6 +10,7 @@ const containerb = $('.side-b');
         url:'https://api.nasa.gov/planetary/apod?api_key=XhB5GKyMvDUDplRAwBJMLz4ST1fVhVYXkcNLSROr',
         dataType: 'json',
         success: function(data) {
+            //Voor te zien of de data te pakken is (debugging)
             console.log('success',data);
             containera.append('<h2>' + data.title + '</h2>');
             containera.append('<p>' + data.date + '</p>');
@@ -27,7 +28,6 @@ const containerb = $('.side-b');
 
         }
     });
-
 /*
 CHART
 */
@@ -47,6 +47,11 @@ var chart = new Chart(ctx, {
         }]
     },
 
+    // Configuration options go here
+    options: {
+
+    }
+});
     // Configuration options go here
     options: {
 
