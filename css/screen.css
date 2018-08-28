@@ -203,10 +203,23 @@ footer {
 @media (max-width: 1857px ) {
 
     li {
-        font-size: 20px;
+        font-size: 40px;
     }
     #DG-text {
         line-height: 2.4;
+    }
+    .side-a,
+    .side-b,
+    .img-box {
+        width: 800px;
+        height: 700px;
+    }
+    .nasadata {
+        width: 650px;
+        height: 550px;
+    }
+    #explanation{
+        font-size: 25px;
     }
 }
 @media (max-width: 1024px ){
