@@ -25,10 +25,11 @@ nav {
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 0;
+    top: -80px;
     width: 100%;
     z-index: 1000000;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #000;
+    transition: top 2s;
 }
 ul {
     display: inline-flex;
@@ -53,6 +54,25 @@ h1 {
 #nasalogo {
     width: 80px;
     height: 80px;
+}
+
+.dropdown {
+position: fixed;
+margin-top: 55px;
+padding: 27px;
+background-color: #000;
+padding-top: 0;
+padding-bottom: 0;
+border-radius: 50%;
+}
+
+.plus{
+    font-size: 40px;
+    transition: transform 2s;
+}
+
+nav:hover {
+    top: 0;
 }
 
 ::-webkit-scrollbar {
@@ -118,6 +138,7 @@ h1 {
     margin: auto;
     justify-content: center;
     background: linear-gradient(to top right, #080a38, #1A1FBA );
+    max-width: 950px;
 }
 #myChart{
     width: 100px;
@@ -155,6 +176,8 @@ h1 {
 
 #explanation {
     font-size: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 #hover {
@@ -250,6 +273,14 @@ footer {
 @media (max-width: 784px) {
     nav {
         flex-direction: column;
+        top: 0;
+        background-color: rgba(0,0,0,0.5);
+    }
+    .dropdown{
+        visibility: hidden;
+    }
+    .plus{
+        visibility: hidden;
     }
     ul {
         display: flex;
@@ -302,6 +333,10 @@ footer {
     }
     #nasalogo {
     margin-bottom: 25px;
+    }
+    #explanation {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 @media (max-width: 326px) {

@@ -92,19 +92,3 @@ $.ajax({
         });
     }
 });
-
-/*
-nasa logo knop
- */
-$(document).ready(function(){
-   $("nav").show();
-   $("#btn").click(function(){
-      if ($("nav").is(":hidden") == false){
-          $("nav").hide();
-          $("#btn").val('SHOW');
-      } else {
-          $("nav").show();
-          $("#btn").val('HIDE');
-      }
-   });
-});
