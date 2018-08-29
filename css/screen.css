@@ -54,6 +54,23 @@ h1 {
     width: 80px;
     height: 80px;
 }
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #010101;
+}
+
+::-webkit-scrollbar-thumb {
+    background: royalblue;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darkblue;
+}
 /***********************
       DOELGROEP
 ***********************/
