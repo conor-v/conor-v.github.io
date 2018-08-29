@@ -37,31 +37,58 @@ $.ajax({
     dataType: 'json',
     success: function (data) {
         console.log('success',data);
-        $.each(data, function (i, item) {
-            // console.log(item.estimated_diameter, "test");
 
+        const json_dict = new Map();
+        const near_earth_objects_dict = new Map();
+
+        $.each(data, function (key, val) {
+            json_dict.set(key, val);
+        });
+
+        $.each( json_dict.get('near_earth_objects'), function(key, val){
+           near_earth_objects_dict.set(key, val);
+        });
+
+        const asteroids_array = near_earth_objects_dict.get('2015-09-08');
+
+        const minArray = [];
+        const maxArray = [];
+        const naamArray = [];
+
+        asteroids_array.forEach(function (asteroid) {
+            const min = asteroid.estimated_diameter.meters.estimated_diameter_min;
+            const max = asteroid.estimated_diameter.meters.estimated_diameter_max;
+            const naam = asteroid.name;
+
+            minArray.push(min);
+            maxArray.push(max);
+            naamArray.push(naam);
+
+            // console.log(minArray, 'min');
+            // console.log(maxArray, 'max');
 
         const ctx = document.getElementById('myChart').getContext('2d');
+
         const chart = new Chart(ctx, {
             // The type of chart we want to create
             type: 'line',
 
             // The data for our dataset
             data: {
-                labels: ["RG2", "RL35", "RX83", "RY83", "LE27", "FC35", "RH36", "RU33", "RN41"],
+                labels: naamArray,
                 datasets: [{
                     label: "Astro min",
                     borderColor: '#5B007A',
-                    data: [1, 5, 8, 9, 5, 10, 8, 2, 5]
+                    data: minArray
                     },
                     {
                         label: "Astro max",
                     borderColor: '#7158FA',
-                    data: [5, 8, 12, 15, 8, 12, 10, 9, 8]
+                    data: maxArray
                 }]
             }
         });
-         // console.log(item);
+
         });
     }
 });
