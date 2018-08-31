@@ -46,16 +46,13 @@ h1 {
     background: darkblue;
     margin-bottom: 10px;
 }
-
 .active {
     background-color: aqua;
 }
-
 #nasalogo {
     width: 80px;
     height: 80px;
 }
-
 .dropdown {
 position: fixed;
 margin-top: 55px;
@@ -65,29 +62,23 @@ padding-top: 0;
 padding-bottom: 0;
 border-radius: 50%;
 }
-
 .plus{
     font-size: 40px;
     transition: transform 2s;
 }
-
 nav:hover {
     top: 0;
 }
-
 ::-webkit-scrollbar {
     width: 7px;
 }
-
 ::-webkit-scrollbar-track {
     background: #010101;
 }
-
 ::-webkit-scrollbar-thumb {
     background: royalblue;
     border-radius: 10px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background: darkblue;
 }
@@ -103,11 +94,15 @@ nav:hover {
 #DG-info {
     display: inline-flex;
     justify-content: center;
-    width: 100%;
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 #img-data {
     width: 42%;
     height: 42%;
+    max-width: 950px;
 }
 #DG-text {
     display: flex;
@@ -173,13 +168,11 @@ nav:hover {
     height: 550px;
     margin: auto;
 }
-
 #explanation {
     font-size: 25px;
     margin-left: 40px;
     margin-right: 40px;
 }
-
 #hover {
     color: blanchedalmond;
     border-radius: 10px;
@@ -244,6 +237,7 @@ footer {
 }
 #madeby {
     margin: auto;
+    font-size: 14px;
 }
 #website-link {
     color: dodgerblue;
@@ -251,7 +245,6 @@ footer {
 /***********************
         @media
 ***********************/
-
 @media (max-width: 1024px ){
     li {
         margin-right: 40px;
@@ -289,7 +282,7 @@ footer {
     }
     li {
         margin-right: 20px;
-        font-size: 12px;
+        font-size: 14px;
     }
     .h1-delen {
         margin: auto;
